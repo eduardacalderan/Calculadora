@@ -39,9 +39,9 @@ function creatCalculator() {
 
       try {
         account = eval(account)
-        if (!account) {
-          alert('Conta inválida!')
-          return
+        if (Number.isNaN(account) || typeof account !== 'number') {
+        alert('Conta inválida!')
+        return
         }
 
         this.input.value = account
