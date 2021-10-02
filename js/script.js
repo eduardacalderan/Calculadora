@@ -21,6 +21,7 @@ function creatCalculator() {
     //pegar o valor do botão clicado
     btnForInput(valor) {
       this.input.value += valor
+      this.input.focus()
     },
 
     //limpar o campo do input
